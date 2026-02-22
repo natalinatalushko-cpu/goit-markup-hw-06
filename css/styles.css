@@ -1037,6 +1037,17 @@ button.burger-button {
 
 /* media======================================== */ 
 
+@media (min-width: 769px) {
+	.mobile-menu-backdrop {
+		display: none;
+	}
+
+	.page-nav-burger {
+		display: none;
+	}
+
+}
+
 @media (max-width: 768px) {
 
 	.page-header .container ul.social-list {
@@ -1056,6 +1067,14 @@ button.burger-button {
 
 	.header-container {
 		padding: 0;
+	}
+
+	.page-nav-burger {
+		display: none;
+	}
+
+	.mobile-menu-backdrop {
+		display: none;
 	}
 
 /* hero-banner */
