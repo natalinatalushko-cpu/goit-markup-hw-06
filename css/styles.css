@@ -237,6 +237,13 @@ address {
 	padding-right: 16px;
 }
 
+.header-container .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+
 .page-header {
 	border-bottom: 1px solid #E7E9FC;
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -327,15 +334,10 @@ address {
 		font-style: normal;
 	}
 
-	.social-list {
-		display: flex;
-		gap: 40px;
-	}
-
 	.social-list li a {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 12px;
 		line-height: 1.5;
 		letter-spacing: 0.02em;
 		color: #434455;
@@ -357,6 +359,49 @@ address {
 
 }
 
+/* adress-social-menu */
+
+@media screen and (min-width: 768px) {
+	.social-list {
+		display: flex;
+		/* gap: 40px; */
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1158px) {
+	.social-list {
+		gap: 40px;
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	
+	.social-list li.first a {
+		padding-bottom: 12px;
+        padding-top: 16px;
+	}
+
+	.social-list li.last a {
+		padding: 0;
+        padding-bottom: 16px;
+	}
+}
+
+@media screen and (min-width: 1158px) {
+	
+	.social-list li.first a {
+		padding: 16px;
+	}
+
+	.social-list li.last a {
+        padding: 16px;
+	}
+}
+	
+/* end-adress-social-menu */
+
 /* burger */
 
 .page-nav-burger {
@@ -375,12 +420,12 @@ button.burger-button {
 
 /* burger-icon */
 
-.page-nav-burger {
+/* .page-nav-burger {
 	position: absolute;
 	top: 21px;
     right: 20px;
 	z-index: 1000;
-}
+} */
 
 button.burger-button {
 	border-radius: 0;
