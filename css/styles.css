@@ -17,6 +17,11 @@ body {
 	letter-spacing: 0.02em;
 }	
 
+/* block scroll on page when modal window open */
+body:has(.modal-overlay.is-open) {
+	overflow-y: hidden;
+}
+
 button {
 	font-family: inherit;
 	font-weight: 500;	
@@ -669,13 +674,14 @@ button.burger-button {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 0;
+	row-gap: 72px;
+	column-gap: 24px;
 }
 
 .features-list-item {
 	margin-right: 0;
 	min-width: 288px;
-	margin-bottom: 72px;
+	/* margin-bottom: 72px; */
 }
 
 .features-list-item:last-child {
@@ -701,18 +707,18 @@ p.feature-text {
 
 	.features-list-item {
 		max-width: 345px;
-		margin-right: 23px;
+		/* margin-right: 23px; */
 	}
 
 
-	.features-list-item:nth-child(1),
+	/* .features-list-item:nth-child(1),
 	.features-list-item:nth-child(2) {
 		margin-bottom: 72px;
-	}
+	} */
 
-	.features-list-item:last-child {
+	/* .features-list-item:last-child {
 		margin-right: 0;
-	}
+	} */
 
 }
 
@@ -861,11 +867,11 @@ section.team-block ul li img {
 	/* padding-bottom: 32px; */
 }
 
-@media screen and (min-width: 1157px) {
+@media screen and (min-width: 768px) {
 
-.social-wrapper {
-	justify-content: left;
-}
+	.social-wrapper {
+		justify-content: left;
+	}
 
 }
 
@@ -1068,7 +1074,7 @@ li.portfolio-list-item:hover {
 @media screen and (min-width: 768px) {
 	
 	.footer-area .container {
-		padding: 97px 75px 96px 108px;
+		padding: 96px 108px 96px 108px;
 	}
 
 }
@@ -1110,6 +1116,15 @@ li.portfolio-list-item:hover {
 .footer-content-section .block-2 .section-footer-socials-title,
 .footer-content-section .block-3 .footer-block-3-title {
 	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	
+	.footer-content-section .block-1 .logo-link,
+	.footer-content-section .block-2 .section-footer-socials-title {
+		text-align: left;
+	}
+
 }
 
 .footer-content-section .block-3 .footer-block-3-title {
@@ -1379,27 +1394,33 @@ footer ul.social-wrapper  li.team-social-list-item .social-link:hover {
 			.modal-overlay.is-open {
 				opacity: 1;
 				visibility: visible;
-				pointer-events: auto;
+				pointer-events: initial;
 			}
 
 .modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 	background-color: #FCFCFC;
-	padding: 16px;
+	padding: 72px 16px 24px 16px;
 	border-radius: 4px;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
 				0 1px 3px 0 rgba(0, 0, 0, 0.12), 
 				0 2px 1px 0 rgba(0, 0, 0, 0.2);
 	max-width: 288px;
-	max-height: 584px;
-	overflow-y: auto;
+	min-height: 635px;
+	/* overflow-y: auto;
 	position: relative;
-	z-index: 1001;
+	z-index: 1001; */
 }
 
 @media screen and (min-width: 768px) {
 
 	.modal {
 		max-width: 408px;
+		padding: 72px 24px 24px 24px;
 	}
 
 }
