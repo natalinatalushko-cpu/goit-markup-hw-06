@@ -18,7 +18,7 @@ if (modalCloseBtn && modalBackdrop) {
 
 // ===== BURGER MENU =====
 const burgerBtn = document.querySelector('.burger-button');
-const mobileMenu = document.querySelector('.mobile-menu-backdrop');
+const mobileMenu = document.querySelector('.mobile-menu');
 const burgerCloseBtn = document.querySelector('.mobile-menu .modal-close');
 
 if (burgerBtn && mobileMenu) {

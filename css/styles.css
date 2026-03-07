@@ -189,7 +189,7 @@ h3 {
 	.page-logo {
 	padding-top: 24px;
 	padding-bottom: 24px;
-	margin-right: 76px;
+	margin-right: 120px;
 	}
 
 	.page-nav, 
@@ -197,6 +197,12 @@ h3 {
 		display: block;
 	}
 
+}
+
+@media screen and (min-width: 1158px) {
+	.page-logo {
+		margin-right: 76px;
+	}
 }
 
 .accent-blue {
@@ -324,7 +330,7 @@ address {
 	}
 
 	.nav-list-link:hover::after {
-	transform: scaleX(1);
+		transform: scaleX(1);
 	}
 
 	/* end navigation */
@@ -334,6 +340,8 @@ address {
 		margin-left: auto;
 		font-style: normal;
 	}
+
+	
 
 	.social-list li a {
 		font-family: 'Roboto', sans-serif;
@@ -401,11 +409,11 @@ address {
 @media screen and (min-width: 1158px) {
 	
 	.social-list li.first a {
-		padding: 16px;
+		padding: 0;
 	}
 
 	.social-list li.last a {
-        padding: 16px;
+        padding: 0;
 	}
 }
 	
@@ -451,6 +459,12 @@ button.burger-button {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-backdrop {
+    display: none;
+  }
 }
 
 .mobile-menu {
@@ -515,7 +529,7 @@ button.burger-button {
     fill: rgb(244, 244, 253);
 }
 
-.mobile-menu-backdrop {
+.mobile-menu {
 	/* DO NOT DELETE BELOW - CLASS FOR WORK OF THE MOBILE MENU */
 	/*  */opacity: 0;
   	/*  */visibility: hidden;
@@ -524,7 +538,7 @@ button.burger-button {
 }
 
 /* DO NOT DELETE - CLASS FOR WORK OF MOBILE MENU */
-		.mobile-menu-backdrop.is-open {
+		.mobile-menu.is-open {
 			opacity: 1;
 			visibility: visible;
 			pointer-events: auto;
@@ -983,6 +997,14 @@ li.portfolio-list-item {
 	
 }
 
+@media screen and (min-width:768px) {
+	
+	li.portfolio-list-item {
+		box-shadow: none;
+	}
+	
+}
+
 li.portfolio-list-item:hover {
 	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
 	0 1px 1px 0 rgba(46, 47, 66, 0.16), 
@@ -1334,13 +1356,13 @@ footer ul.social-wrapper  li.team-social-list-item .social-link:hover {
 	/*  */
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
 	
 	.modal-overlay {
 		display: none;
 	}
 
-}
+} */
 
 /* DO NOT DELETE - CLASS FOR WORK OF THE FORM */
 			.modal-overlay.is-open {
@@ -1428,11 +1450,12 @@ button.modal-close:hover {
 	color: #2e2f42;
 	margin-bottom: 16px;
 	text-align: center;
+	padding: 0 30px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
 	.modal-form .form-title {
-		padding: 0 30px;
+		padding: 0;
 	}
 }
 
