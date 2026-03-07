@@ -361,6 +361,7 @@ address {
 		
 		.social-list li a {
 			font-size: 16px;
+			line-height: 1.5;
 		}
 
 	}
@@ -381,7 +382,7 @@ address {
 @media screen and (min-width: 768px) {
 	.social-list {
 		display: flex;
-		/* gap: 40px; */
+		gap: 12px;
 		flex-direction: column;
 	}
 }
@@ -396,13 +397,11 @@ address {
 @media screen and (min-width: 768px) {
 	
 	.social-list li.first a {
-		padding-bottom: 12px;
-        padding-top: 16px;
+		padding: 0;
 	}
 
 	.social-list li.last a {
 		padding: 0;
-        padding-bottom: 16px;
 	}
 }
 
@@ -472,6 +471,14 @@ button.burger-button {
 	width: 100%;
 	background-color: #fff;
 	padding: 72px 16px 40px 16px;
+}
+
+@media screen and (min-width: 768px) {
+	
+	.mobile-menu {
+		padding: 72px 24px 40px 24px;
+	}
+
 }
 
 .mobile-link {
@@ -669,6 +676,10 @@ button.burger-button {
 	margin-right: 0;
 	min-width: 288px;
 	margin-bottom: 72px;
+}
+
+.features-list-item:last-child {
+	margin-bottom: 0;
 }
 
 .features-list .features-icon-wrapper {
@@ -997,12 +1008,12 @@ li.portfolio-list-item {
 	
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1158px) {
 	
 	li.portfolio-list-item {
 		box-shadow: none;
 	}
-	
+
 }
 
 li.portfolio-list-item:hover {
