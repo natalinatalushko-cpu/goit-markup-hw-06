@@ -1,34 +1,23 @@
-// ===== MODAL FORM =====
-const openModalBtn = document.querySelector('.hero-button');
-const modalBackdrop = document.querySelector('.modal-overlay');
-const modalCloseBtn = document.querySelector('.modal-close');
+const openBtn = document.querySelector(".burger-button");
+const closeBtn = document.querySelector(".modal-close");
+const backdrop = document.querySelector(".mobile-menu-backdrop");
 
-if (openModalBtn && modalBackdrop) {
-  openModalBtn.addEventListener('click', () => {
-    modalBackdrop.classList.add('is-open');
-  });
-}
+openBtn.addEventListener("click", () => {
+  backdrop.classList.add("is-open");
+});
 
-if (modalCloseBtn && modalBackdrop) {
-  modalCloseBtn.addEventListener('click', () => {
-    modalBackdrop.classList.remove('is-open');
-  });
-}
+closeBtn.addEventListener("click", () => {
+  backdrop.classList.remove("is-open");
+});
 
+backdrop.addEventListener("click", (event) => {
+  if (event.target === backdrop) {
+    backdrop.classList.remove("is-open");
+  }
+});
 
-// ===== BURGER MENU =====
-const burgerBtn = document.querySelector('.burger-button');
-const mobileMenu = document.querySelector('.mobile-menu');
-const burgerCloseBtn = document.querySelector('.mobile-menu .modal-close');
-
-if (burgerBtn && mobileMenu) {
-  burgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('is-open');
-  });
-}
-
-if (burgerCloseBtn && mobileMenu) {
-  burgerCloseBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-  });
-}
+mobileMenuBackdrop.addEventListener('click', (event) => {
+  if (event.target === mobileMenuBackdrop) {
+    mobileMenuBackdrop.classList.remove('is-open');
+  }
+});
