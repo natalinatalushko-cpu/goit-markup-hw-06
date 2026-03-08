@@ -90,6 +90,8 @@ input {
 section {
 	padding-top: 96px;
 	padding-bottom: 96px;
+	display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1158px) {
@@ -221,7 +223,6 @@ address {
 
 .container {
 	width: 100%;
-	margin: 0 auto;
 	max-width: 320px;
 	padding: 0 16px;
 }
@@ -244,9 +245,10 @@ address {
 /* header */
 
 .header-container {
-	margin: 0 auto;
 	padding-left: 16px;
 	padding-right: 16px;
+	display: flex;
+	justify-content: center;
 }
 
 .header-container .container {
@@ -426,10 +428,6 @@ address {
 /* burger */
 
 .page-nav-burger {
-	/* position: absolute;
-	top: 21px;
-    right: 20px;
-	z-index: 1000; */
 	margin-left: auto;
 }
 
@@ -467,7 +465,7 @@ button.burger-button {
 }
 
 .mobile-menu-backdrop.is-open {
- 	 opacity: 1;
+ 	opacity: 1;
   	visibility: visible;
   	pointer-events: auto;
 }
@@ -1084,6 +1082,11 @@ li.portfolio-list-item:hover {
 
 
 /* footer */
+
+.footer-area {
+	display: flex;
+    justify-content: center;
+}
 
 .footer-area .container {
 	padding: 97px 16px;
