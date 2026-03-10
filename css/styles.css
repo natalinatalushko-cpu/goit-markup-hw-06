@@ -425,6 +425,16 @@ address {
 	margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+	
+	.page-nav-burger {
+		display: none;
+	}
+
+}
+
+
+
 button.burger-button {
 	border-radius: 0;
 	background: none;
@@ -666,7 +676,7 @@ button.burger-button {
 			);
 	}
 
-	.main-header {
+	.main-title {
 		margin-bottom: 48px;
 	}
 
@@ -1112,8 +1122,9 @@ li.portfolio-list-item:hover {
 
 @media screen and (min-width: 768px) {
 	
-	.footer-area {
+	.footer-area .container {
 		padding-left: 108px;
+		padding-right: 108px;
 	}
 
 }
