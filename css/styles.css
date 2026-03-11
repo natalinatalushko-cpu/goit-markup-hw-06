@@ -1120,6 +1120,16 @@ li.portfolio-list-item:hover {
  	padding-bottom: 96px;
 }
 
+@media screen and (min-width: 1158px) {
+	
+	.footer-area {
+		padding-left: 0;
+		padding-top: 100px;
+ 		padding-bottom: 100px;
+	}
+
+}
+
 @media screen and (min-width: 768px) {
 	
 	.footer-area .container {
@@ -1130,11 +1140,10 @@ li.portfolio-list-item:hover {
 }
 
 @media screen and (min-width: 1158px) {
-	
-	.footer-area {
-		padding-left: 0;
-		padding-top: 100px;
- 		padding-bottom: 100px;
+
+	.footer-area .container {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 }
@@ -1163,7 +1172,7 @@ li.portfolio-list-item:hover {
 	.footer-content-section {
 		align-items: baseline;
 		flex-wrap: nowrap;
-		column-gap: 120px;
+		column-gap: 0;
 	}
 
 	.footer-content-section > * {
@@ -1231,12 +1240,16 @@ p.footer-info {
 	}
 
 	.footer-content-section .block-1 {
-		/* margin: 0 120px 0 0; */
+		margin: 0 120px 0 0;
 		max-width: 260px;
 	}
 
 	.footer-content-section .block-2 {
 		/* margin-right: 83px; */
+	}
+
+	.footer-content-section .block-3 {
+		margin-left: auto;
 	}
 
 	.footer-content-section .block-3 .footer-block-3-title {
